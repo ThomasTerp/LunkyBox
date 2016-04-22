@@ -508,7 +508,6 @@ namespace Mod
 			AddSpawnEntityMenuItem(worldObjectsMenu, "Prize Wheel Flipper", Spelunky::ENTITY_CLASS::PRIZE_WHEEL_FLIPPER);
 			AddSpawnEntityMenuItem(worldObjectsMenu, "Prize Door", Spelunky::ENTITY_CLASS::PRIZE_DOOR);
 			AddSpawnEntityMenuItem(worldObjectsMenu, "Falling Ice", Spelunky::ENTITY_CLASS::FALLING_ICE);
-			AddSpawnEntityMenuItem(worldObjectsMenu, "Force Field", Spelunky::ENTITY_CLASS::FORCE_FIELD);
 			AddSpawnEntityMenuItem(worldObjectsMenu, "Force Field Beam", Spelunky::ENTITY_CLASS::FORCE_FIELD_BEAM);
 			AddSpawnEntityMenuItem(worldObjectsMenu, "Coffin", Spelunky::ENTITY_CLASS::COFFIN);
 			AddSpawnEntityMenuItem(worldObjectsMenu, "Spaceship Platform", Spelunky::ENTITY_CLASS::SPACESHIP_PLATFORM);
@@ -795,6 +794,7 @@ namespace Mod
 			AddSpawnEntityMenuItem(brokenObjectsMenu, "Black Box Rope", Spelunky::ENTITY_CLASS::BLACK_BOX_ROPE);
 			AddSpawnEntityMenuItem(brokenObjectsMenu, "Mystery Box", Spelunky::ENTITY_CLASS::MYSTERY_BOX);
 			AddSpawnEntityMenuItem(brokenObjectsMenu, "King Yama's Hand", Spelunky::ENTITY_CLASS::KING_YAMAS_HAND);
+			AddSpawnEntityMenuItem(brokenObjectsMenu, "Force Field (crash)", Spelunky::ENTITY_CLASS::FORCE_FIELD);
 			AddSpawnEntityMenuItem(brokenObjectsMenu, "Journal (crash)", Spelunky::ENTITY_CLASS::JOURNAL);
 			AddSpawnEntityMenuItem(brokenObjectsMenu, "Olmec Intro (crash)", Spelunky::ENTITY_CLASS::OLMEC_INTRO);
 			AddSpawnEntityMenuItem(brokenObjectsMenu, "Glass Block (crash)", Spelunky::ENTITY_CLASS::GLASS_BLOCK);
