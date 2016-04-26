@@ -532,6 +532,7 @@ namespace Mod
 			AddSpawnEntityMenuItem(aiObjectsMenu, "Fish", Spelunky::ENTITY_CLASS::FISH);
 			AddSpawnEntityMenuItem(aiObjectsMenu, "Penguin", Spelunky::ENTITY_CLASS::PENGUIN);
 			AddSpawnEntityMenuItem(aiObjectsMenu, "Locust", Spelunky::ENTITY_CLASS::LOCUST);
+			AddSpawnEntityMenuItem(aiObjectsMenu, "Maggot", Spelunky::ENTITY_CLASS::MAGGOT);
 			AddSpawnEntityMenuItem(aiObjectsMenu, "Snake", Spelunky::ENTITY_CLASS::SNAKE);
 			AddSpawnEntityMenuItem(aiObjectsMenu, "Cobra", Spelunky::ENTITY_CLASS::COBRA);
 			AddSpawnEntityMenuItem(aiObjectsMenu, "Spider", Spelunky::ENTITY_CLASS::SPIDER);

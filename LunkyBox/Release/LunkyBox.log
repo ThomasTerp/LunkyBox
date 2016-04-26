@@ -1,7 +1,24 @@
-﻿  Mod.cpp
+﻿  Config.cpp
+  Module.cpp
+  BoolMenuItem.cpp
+  D3d9.cpp
+  Drawing.cpp
+  Entity.cpp
+  ENTITY_CLASS.cpp
+  Input.cpp
+  IntMenuItem.cpp
+  ITEM_CLASS.cpp
+  KeyState.cpp
+  Main.cpp
+  Memory.cpp
+  Menu.cpp
+  MenuItem.cpp
+  Mod.cpp
+  Player.cpp
+  Spelunky.cpp
+  Vector2.cpp
+  Window.cpp
   Generating code
-  1 of 4014 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
-    0 functions were new in current compilation
-    1 functions had inline decision re-evaluated but remain unchanged
+  All 4288 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
   Finished generating code
   LunkyBox.vcxproj -> D:\Dropbox\Projects\C++\LunkyBox\Release\LunkyBox.dll

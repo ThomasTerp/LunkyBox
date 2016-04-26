@@ -7,7 +7,7 @@ input_left=0x64
 input_right=0x66
 
 menu_x=10
-menu_y=200
+menu_y=10
 menu_width=300
-menu_items_per_page=10
+menu_items_per_page=8
 menu_sounds=on

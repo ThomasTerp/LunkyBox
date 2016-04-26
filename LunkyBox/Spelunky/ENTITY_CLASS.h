@@ -223,6 +223,7 @@ namespace Spelunky
 		RAT = 1063,
 		PENGUIN = 1064,
 		BACKGROUND_ALIEN = 1065,
-		LOCUST = 1067
+		LOCUST = 1067,
+		MAGGOT = 1068
 	};
 }
