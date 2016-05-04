@@ -1,0 +1,23 @@
+﻿  Config.cpp
+  D3d9.cpp
+  Drawing.cpp
+  Input.cpp
+  KeyState.cpp
+  Main.cpp
+  Module.cpp
+  BoolMenuItem.cpp
+  IntMenuItem.cpp
+  Menu.cpp
+  MenuItem.cpp
+  Mod.cpp
+  Entity.cpp
+  ENTITY_CLASS.cpp
+  ITEM_CLASS.cpp
+  Player.cpp
+  Spelunky.cpp
+  Vector2.cpp
+  Window.cpp
+  Generating code
+  All 4265 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  LunkyBoxGOG.vcxproj -> D:\Dropbox\Projects\C++\LunkyBox\Release\LunkyBoxGOG.dll

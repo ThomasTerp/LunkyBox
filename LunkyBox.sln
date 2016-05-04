@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LunkyBox", "LunkyBox\LunkyB
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LunkyBoxInjector", "LunkyBoxInjector\LunkyBoxInjector.vcxproj", "{FC05B746-3612-4D80-B17F-BE10126A4DF3}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LunkyBoxGOG", "LunkyBoxGOG\LunkyBoxGOG.vcxproj", "{1107FFA7-138B-4AAA-8028-145EA5BBD164}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,14 @@ Global
 		{FC05B746-3612-4D80-B17F-BE10126A4DF3}.Release|x64.Build.0 = Release|x64
 		{FC05B746-3612-4D80-B17F-BE10126A4DF3}.Release|x86.ActiveCfg = Release|Win32
 		{FC05B746-3612-4D80-B17F-BE10126A4DF3}.Release|x86.Build.0 = Release|Win32
+		{1107FFA7-138B-4AAA-8028-145EA5BBD164}.Debug|x64.ActiveCfg = Debug|x64
+		{1107FFA7-138B-4AAA-8028-145EA5BBD164}.Debug|x64.Build.0 = Debug|x64
+		{1107FFA7-138B-4AAA-8028-145EA5BBD164}.Debug|x86.ActiveCfg = Debug|Win32
+		{1107FFA7-138B-4AAA-8028-145EA5BBD164}.Debug|x86.Build.0 = Debug|Win32
+		{1107FFA7-138B-4AAA-8028-145EA5BBD164}.Release|x64.ActiveCfg = Release|x64
+		{1107FFA7-138B-4AAA-8028-145EA5BBD164}.Release|x64.Build.0 = Release|x64
+		{1107FFA7-138B-4AAA-8028-145EA5BBD164}.Release|x86.ActiveCfg = Release|Win32
+		{1107FFA7-138B-4AAA-8028-145EA5BBD164}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
