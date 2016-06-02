@@ -16,6 +16,6 @@ Known bugs:
 - Changing screen resolution after opening menu might crash the game.
 - If any of the player infinite options is on when going into the Yama level, the game will crash. Turn them off before going into the level, you can turn them on again after the Yama cutscene is over.
 
-Download: https://www.dropbox.com/s/4tq3qim99c2ccry/LunkyBox.zip?dl=1  
+Download: https://github.com/ThomasTerp/LunkyBox/releases
 Video: https://www.youtube.com/watch?v=7bU-LUbaObc  
 Reddit thread: https://www.reddit.com/r/spelunky/comments/4g0byn/lunkybox_ingame_menu_mod_with_object_spawner/  
