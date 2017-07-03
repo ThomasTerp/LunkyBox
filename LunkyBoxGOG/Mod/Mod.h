@@ -13,7 +13,7 @@
 
 namespace Mod
 {
-	const char* const TITLE = "LunkyBox v1.2";
+	const char* const TITLE = "LunkyBox v1.3";
 	const char* const FONT = "Arial";
 	const char* const CONFIG_FILE = "config.txt";
 

@@ -2,6 +2,7 @@
 #include "../Input/Input.h"
 #include "../Config/Config.h"
 
+//This code is made with the classic menu_layout in mind. If you are going to try and make sense of this code, set menu_layout to classic in config.txt and see how that works ingame.
 
 namespace Mod
 {
@@ -90,32 +91,33 @@ namespace Mod
 				}
 			}
 
-
-			//previous page
-
-			if(Input::IsKeyPressed(Config::GetNumber("input_left"), Input::INPUT_MODE::CONTINUOUS))
+			if(Config::GetText("menu_layout") == "classic")
 			{
-				PreviousPage();
+				//previous page
 
-				if(Config::GetBool("menu_sounds"))
+				if(Input::IsKeyPressed(Config::GetNumber("input_left"), Input::INPUT_MODE::CONTINUOUS))
 				{
-					Mod::player.PlaySound(SOUND_PAGE_PREV_NEXT);
+					PreviousPage();
+
+					if(Config::GetBool("menu_sounds"))
+					{
+						Mod::player.PlaySound(SOUND_PAGE_PREV_NEXT);
+					}
+				}
+
+
+				//Next page
+
+				if(Input::IsKeyPressed(Config::GetNumber("input_right"), Input::INPUT_MODE::CONTINUOUS))
+				{
+					NextPage();
+
+					if(Config::GetBool("menu_sounds"))
+					{
+						Mod::player.PlaySound(SOUND_PAGE_PREV_NEXT);
+					}
 				}
 			}
-
-
-			//Next page
-
-			if(Input::IsKeyPressed(Config::GetNumber("input_right"), Input::INPUT_MODE::CONTINUOUS))
-			{
-				NextPage();
-
-				if(Config::GetBool("menu_sounds"))
-				{
-					Mod::player.PlaySound(SOUND_PAGE_PREV_NEXT);
-				}
-			}
-
 
 			//Select
 
@@ -179,13 +181,23 @@ namespace Mod
 
 		Drawing::DrawRectangle(deviceInterface, Config::GetNumber("menu_x"), Config::GetNumber("menu_y"), Config::GetNumber("menu_width"), TITLE_BOX_HEIGHT, color1);
 		Drawing::DrawText(fontMenuTitle, name.c_str(), Config::GetNumber("menu_x") + MENU_MARGIN, Config::GetNumber("menu_y") + 4, Config::GetNumber("menu_width") - MENU_MARGIN, TITLE_BOX_HEIGHT - MENU_MARGIN, color2);
-		
-		if(pageCount > 1)
-		{
-			std::stringstream pageNumberText;
-			pageNumberText << "Page " << page + 1 << " of " << pageCount;
 
-			Drawing::DrawText(fontMenuPageNumber, pageNumberText.str().c_str(), Config::GetNumber("menu_x") + MENU_MARGIN, Config::GetNumber("menu_y") + 38, Config::GetNumber("menu_width") - MENU_MARGIN, TITLE_BOX_HEIGHT - MENU_MARGIN, color2);
+		if(Config::GetText("menu_layout") == "classic")
+		{
+			if(pageCount > 1)
+			{
+				std::stringstream pageNumberText;
+				pageNumberText << "Page " << page + 1 << " of " << pageCount;
+
+				Drawing::DrawText(fontMenuPageNumber, pageNumberText.str().c_str(), Config::GetNumber("menu_x") + MENU_MARGIN, Config::GetNumber("menu_y") + 38, Config::GetNumber("menu_width") - MENU_MARGIN, TITLE_BOX_HEIGHT - MENU_MARGIN, color2);
+			}
+		}
+		else if(Config::GetText("menu_layout") == "single_page")
+		{
+			std::stringstream indexText;
+			indexText << Config::GetNumber("menu_items_per_page") * page + selectedMenuItemIndex + 1 << " / " << menuItems.size();
+
+			Drawing::DrawText(fontMenuPageNumber, indexText.str().c_str(), Config::GetNumber("menu_x") + MENU_MARGIN + 2, Config::GetNumber("menu_y") + 38, Config::GetNumber("menu_width") - MENU_MARGIN, TITLE_BOX_HEIGHT - MENU_MARGIN, color2);
 		}
 
 
@@ -247,7 +259,7 @@ namespace Mod
 
 	void Menu::NextPage()
 	{
-		if(page >= GetPageCount() -1)
+		if(page >= GetPageCount() - 1)
 		{
 			page = 0;
 		}
@@ -273,10 +285,28 @@ namespace Mod
 	{
 		std::vector<MenuItem*> menuItemsOnPage;
 
-		for(int menuItemIndex = Config::GetNumber("menu_items_per_page") * page; menuItemIndex < min((int)menuItems.size(), Config::GetNumber("menu_items_per_page") * (page + 1)); menuItemIndex++)
+		if(Config::GetText("menu_layout") == "classic")
 		{
-			MenuItem* menuItem = menuItems[menuItemIndex];
-			menuItemsOnPage.push_back(menuItem);
+			for(int menuItemIndex = Config::GetNumber("menu_items_per_page") * page; menuItemIndex < min((int)menuItems.size(), Config::GetNumber("menu_items_per_page") * (page + 1)); menuItemIndex++)
+			{
+				MenuItem* menuItem = menuItems[menuItemIndex];
+				menuItemsOnPage.push_back(menuItem);
+			}
+		}
+		else if(Config::GetText("menu_layout") == "single_page")
+		{
+			int index = Config::GetNumber("menu_items_per_page") * page + selectedMenuItemIndex;
+			int halfOfPage = (int)round(Config::GetNumber("menu_items_per_page") * 0.5);
+
+			for(
+				int menuItemIndex = max(0, index - halfOfPage + 1 - max(0, index + halfOfPage - (int)menuItems.size()));
+				menuItemIndex < min((int)menuItems.size(), index + halfOfPage - min(0, index - halfOfPage + 1));
+				menuItemIndex++
+				)
+			{
+				MenuItem* menuItem = menuItems[menuItemIndex];
+				menuItemsOnPage.push_back(menuItem);
+			}
 		}
 
 		return menuItemsOnPage;

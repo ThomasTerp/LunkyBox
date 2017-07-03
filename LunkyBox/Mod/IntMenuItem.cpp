@@ -114,7 +114,7 @@ namespace Mod
 		LPCSTR valueLPCSTR = valueString.c_str();
 		int textWidth = Drawing::GetTextWidth(fontMenuItem, valueLPCSTR);
 
-		Drawing::DrawText(fontMenuItem, valueLPCSTR, Config::GetNumber("menu_x") + Config::GetNumber("menu_width") - textWidth - 4, Config::GetNumber("menu_y") + TITLE_BOX_HEIGHT + 6 + (ITEM_HEIGHT + MENU_MARGIN) * menuItemIndex, Config::GetNumber("menu_width") - MENU_MARGIN, ITEM_HEIGHT - MENU_MARGIN, parentMenu->selectedMenuItemIndex == menuItemIndex ? color2 : color1);
+		Drawing::DrawText(fontMenuItem, valueLPCSTR, Config::GetNumber("menu_x") + Config::GetNumber("menu_width") - textWidth - 4, Config::GetNumber("menu_y") + TITLE_BOX_HEIGHT + 6 + (ITEM_HEIGHT + MENU_MARGIN) * menuItemIndex, Config::GetNumber("menu_width") - MENU_MARGIN, ITEM_HEIGHT - MENU_MARGIN, IsInFocus() ? color2 : color1);
 	}
 
 	void IntMenuItem::Select()

@@ -9,5 +9,6 @@ input_right=0x66
 menu_x=10
 menu_y=10
 menu_width=300
-menu_items_per_page=8
+menu_items_per_page=7
 menu_sounds=on
+menu_layout=single_page

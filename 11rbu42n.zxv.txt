@@ -1,0 +1,91 @@
+﻿
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Your branch and 'origin/master' have diverged,
+# and have 1 and 4 different commits each, respectively.
+#   (use "git pull" to merge the remote branch into yours)
+#
+# Changes to be committed:
+#	modified:   .vs/LunkyBox/v14/.suo
+#	modified:   LunkyBox.sdf
+#
+# Changes not staged for commit:
+#	modified:   .vs/LunkyBox/v14/.suo
+#	modified:   LunkyBox.sdf
+#	modified:   LunkyBox/Mod/BoolMenuItem.cpp
+#	modified:   LunkyBox/Mod/IntMenuItem.cpp
+#	modified:   LunkyBox/Mod/Menu.cpp
+#	modified:   LunkyBox/Mod/Mod.h
+#	modified:   LunkyBox/Release/BoolMenuItem.obj
+#	modified:   LunkyBox/Release/Config.obj
+#	modified:   LunkyBox/Release/D3d9.obj
+#	modified:   LunkyBox/Release/Drawing.obj
+#	modified:   LunkyBox/Release/ENTITY_CLASS.obj
+#	modified:   LunkyBox/Release/Entity.obj
+#	modified:   LunkyBox/Release/ITEM_CLASS.obj
+#	modified:   LunkyBox/Release/Input.obj
+#	modified:   LunkyBox/Release/IntMenuItem.obj
+#	modified:   LunkyBox/Release/KeyState.obj
+#	modified:   LunkyBox/Release/LunkyBox.log
+#	modified:   LunkyBox/Release/LunkyBox.tlog/CL.command.1.tlog
+#	modified:   LunkyBox/Release/LunkyBox.tlog/CL.read.1.tlog
+#	modified:   LunkyBox/Release/LunkyBox.tlog/CL.write.1.tlog
+#	modified:   LunkyBox/Release/LunkyBox.tlog/link.read.1.tlog
+#	modified:   LunkyBox/Release/LunkyBox.tlog/link.write.1.tlog
+#	modified:   LunkyBox/Release/Main.obj
+#	modified:   LunkyBox/Release/Memory.obj
+#	modified:   LunkyBox/Release/Menu.obj
+#	modified:   LunkyBox/Release/MenuItem.obj
+#	modified:   LunkyBox/Release/Mod.obj
+#	modified:   LunkyBox/Release/Module.obj
+#	modified:   LunkyBox/Release/Player.obj
+#	modified:   LunkyBox/Release/Spelunky.obj
+#	modified:   LunkyBox/Release/Vector2.obj
+#	modified:   LunkyBox/Release/Window.obj
+#	modified:   LunkyBox/Release/vc140.pdb
+#	modified:   LunkyBoxGOG/Mod/BoolMenuItem.cpp
+#	modified:   LunkyBoxGOG/Mod/IntMenuItem.cpp
+#	modified:   LunkyBoxGOG/Mod/Menu.cpp
+#	modified:   LunkyBoxGOG/Mod/Mod.h
+#	modified:   LunkyBoxGOG/Release/BoolMenuItem.obj
+#	modified:   LunkyBoxGOG/Release/Config.obj
+#	modified:   LunkyBoxGOG/Release/D3d9.obj
+#	modified:   LunkyBoxGOG/Release/Drawing.obj
+#	modified:   LunkyBoxGOG/Release/ENTITY_CLASS.obj
+#	modified:   LunkyBoxGOG/Release/Entity.obj
+#	modified:   LunkyBoxGOG/Release/ITEM_CLASS.obj
+#	modified:   LunkyBoxGOG/Release/Input.obj
+#	modified:   LunkyBoxGOG/Release/IntMenuItem.obj
+#	modified:   LunkyBoxGOG/Release/KeyState.obj
+#	modified:   LunkyBoxGOG/Release/LunkyBoxGOG.log
+#	modified:   LunkyBoxGOG/Release/LunkyBoxGOG.tlog/link.read.1.tlog
+#	modified:   LunkyBoxGOG/Release/LunkyBoxGOG.tlog/link.write.1.tlog
+#	modified:   LunkyBoxGOG/Release/Main.obj
+#	modified:   LunkyBoxGOG/Release/Menu.obj
+#	modified:   LunkyBoxGOG/Release/MenuItem.obj
+#	modified:   LunkyBoxGOG/Release/Mod.obj
+#	modified:   LunkyBoxGOG/Release/Module.obj
+#	modified:   LunkyBoxGOG/Release/Player.obj
+#	modified:   LunkyBoxGOG/Release/Spelunky.obj
+#	modified:   LunkyBoxGOG/Release/Vector2.obj
+#	modified:   LunkyBoxGOG/Release/Window.obj
+#	modified:   LunkyBoxGOG/Release/vc140.pdb
+#	modified:   LunkyBoxInjector/Release/LunkyBoxInjector.Build.CppClean.log
+#	modified:   LunkyBoxInjector/Release/LunkyBoxInjector.log
+#	modified:   LunkyBoxInjector/Release/LunkyBoxInjector.tlog/link.write.1.tlog
+#	modified:   LunkyBoxInjector/Release/Main.obj
+#	modified:   LunkyBoxInjector/Release/vc140.pdb
+#	modified:   Release/LunkyBox.dll
+#	modified:   Release/LunkyBox.iobj
+#	modified:   Release/LunkyBox.ipdb
+#	modified:   Release/LunkyBox.pdb
+#	modified:   Release/LunkyBoxGOG.dll
+#	modified:   Release/LunkyBoxGOG.iobj
+#	modified:   Release/LunkyBoxGOG.ipdb
+#	modified:   Release/LunkyBoxGOG.pdb
+#	modified:   Release/LunkyBoxInjector.exe
+#	modified:   Release/LunkyBoxInjector.pdb
+#	modified:   Release/config.txt
+#
+
