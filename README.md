@@ -21,3 +21,5 @@ Download: https://github.com/ThomasTerp/LunkyBox/releases
 Video: https://www.youtube.com/watch?v=7bU-LUbaObc  
 Reddit thread: https://www.reddit.com/r/spelunky/comments/4g0byn/lunkybox_ingame_menu_mod_with_object_spawner/  
 Steam thread: http://steamcommunity.com/app/239350/discussions/0/364042262886109500/  
+
+If LunkyBox is for some reason not working, you can try download Microsoft Visual C++ Redistributable 2015: https://www.microsoft.com/en-us/download/details.aspx?id=48145
