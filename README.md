@@ -28,3 +28,6 @@ If LunkyBox is for some reason not working, here is some things you can try:
 - Download Microsoft Visual C++ Redistributable 2015: https://www.microsoft.com/en-us/download/details.aspx?id=48145
 - Reinstall Spelunky
 - Make sure you are not using a pirated version of Spelunky
+
+<br />
+<b>Note: This doesn't work with the latest version of Spelunky. The only version it works with is Spelunky 1.4. On Steam you can change version by going to the beta tab of the game and change it to "version1_4".</b>
