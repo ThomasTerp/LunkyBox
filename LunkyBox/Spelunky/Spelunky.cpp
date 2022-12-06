@@ -14,7 +14,7 @@ namespace Spelunky
 	{
 		using SpawnEntityFastCall = DWORD(__fastcall*)(DWORD ecx, void* edx, float x, float y, int entityClassID, bool unknown);
 		SpawnEntityFastCall SpawnEntity = (SpawnEntityFastCall)(GetBaseAddress() + FUNCTION_SPAWNENTITY_OFFSET);
-		DWORD ecx = *(DWORD*)(GetBaseAddress() + 0x1384B4);
+		DWORD ecx = *(DWORD*)(GetBaseAddress() + 0x15446C);
 
 		DWORD entityAddress = SpawnEntity(ecx, NULL, position.x, position.y, (DWORD)entityClass, true);
 
