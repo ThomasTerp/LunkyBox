@@ -6,11 +6,11 @@
 #include "Entity.h"
 #include "ITEM_CLASS.h"
 #include "../Vector2.h"
+#include "../Memory/Offsets.h"
 
 
 namespace Spelunky
 {
-	const std::vector<DWORD> PLAYER_LOCAL_OFFSETS = {0x154510, 0x30};
 	const std::vector<DWORD> PLAYER_HAS_ITEM_OFFSETS = {0x280};
 	const std::vector<DWORD> PLAYER_GOLD_OFFSETS = {0x280, 0x5298};
 	const std::vector<DWORD> PLAYER_HEARTS_OFFSETS = {0x140};

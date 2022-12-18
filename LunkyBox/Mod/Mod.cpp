@@ -49,6 +49,13 @@ namespace Mod
 			return NULL;
 		}
 
+		Offsets::InitializeOffsets();
+		if (!Offsets::IS_STEAM && !Offsets::IS_GOG)
+		{
+			MessageBox(NULL, "Could not determine if Steam or GOG release of Spelunky.", TITLE, NULL);
+
+			return NULL;	
+		}
 
 		//Create main loop
 

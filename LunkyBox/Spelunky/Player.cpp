@@ -6,7 +6,7 @@ namespace Spelunky
 {
 	Player Player::GetLocal()
 	{
-		return Player(Memory::Read<DWORD>(GetBaseAddress(), PLAYER_LOCAL_OFFSETS));
+		return Player(Memory::Read<DWORD>(GetBaseAddress(), Offsets::PLAYER_LOCAL_OFFSETS));
 	}
 
 	Player::Player(DWORD address) : Entity(address)
