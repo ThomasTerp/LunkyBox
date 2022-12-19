@@ -13,8 +13,8 @@ namespace Spelunky
 	Entity SpawnEntity(Vector2 position, ENTITY_CLASS entityClass)
 	{
 		using SpawnEntityFastCall = DWORD(__fastcall*)(DWORD ecx, void* edx, float x, float y, int entityClassID, bool unknown);
-		SpawnEntityFastCall SpawnEntity = (SpawnEntityFastCall)(GetBaseAddress() + FUNCTION_SPAWNENTITY_OFFSET);
-		DWORD ecx = *(DWORD*)(GetBaseAddress() + 0x15446C);
+		SpawnEntityFastCall SpawnEntity = (SpawnEntityFastCall)(GetBaseAddress() + Offsets::FUNCTION_SPAWNENTITY_OFFSET);
+		DWORD ecx = *(DWORD*)(GetBaseAddress() + Offsets::GLOBAL_STATE);
 
 		DWORD entityAddress = SpawnEntity(ecx, NULL, position.x, position.y, (DWORD)entityClass, true);
 
@@ -25,15 +25,15 @@ namespace Spelunky
 	{
 		DWORD baseAddress = GetBaseAddress();
 
-		Memory::Write<float>(GetBaseAddress(), CAMERA_POSITION_X_OFFSETS, position.x);
-		Memory::Write<float>(GetBaseAddress(), CAMERA_POSITION_Y_OFFSETS, position.y);
+		Memory::Write<float>(GetBaseAddress(), Offsets::CAMERA_POSITION_X_OFFSETS, position.x);
+		Memory::Write<float>(GetBaseAddress(), Offsets::CAMERA_POSITION_Y_OFFSETS, position.y);
 	}
 
 	Vector2 GetCameraPosition()
 	{
 		DWORD baseAddress = GetBaseAddress();
 
-		return Vector2(Memory::Read<float>(baseAddress, CAMERA_POSITION_X_OFFSETS), Memory::Read<float>(baseAddress, CAMERA_POSITION_Y_OFFSETS));
+		return Vector2(Memory::Read<float>(baseAddress, Offsets::CAMERA_POSITION_X_OFFSETS), Memory::Read<float>(baseAddress, Offsets::CAMERA_POSITION_Y_OFFSETS));
 	}
 
 	Vector2 ScreenToWorld(Vector2 screenPosition)
@@ -106,66 +106,68 @@ namespace Spelunky
 
 	void SetTotalMinutes(byte minutes)
 	{
-		Memory::Write<byte>(GetBaseAddress(), TIME_TOTAL_MINUTES_OFFSETS, minutes);
+		Memory::Write<byte>(GetBaseAddress(), Offsets::TIME_TOTAL_MINUTES_OFFSETS, minutes);
 	}
 
 	byte GetTotalMinutes()
 	{
-		return Memory::Read<byte>(GetBaseAddress(), TIME_TOTAL_MINUTES_OFFSETS);
+		return Memory::Read<byte>(GetBaseAddress(), Offsets::TIME_TOTAL_MINUTES_OFFSETS);
 	}
 
 	void SetTotalSeconds(byte seconds)
 	{
-		Memory::Write<byte>(GetBaseAddress(), TIME_TOTAL_SECONDS_OFFSETS, seconds);
+		Memory::Write<byte>(GetBaseAddress(), Offsets::TIME_TOTAL_SECONDS_OFFSETS, seconds);
 	}
 
 	byte GetTotalSeconds()
 	{
-		return Memory::Read<byte>(GetBaseAddress(), TIME_TOTAL_SECONDS_OFFSETS);
+		return Memory::Read<byte>(GetBaseAddress(), Offsets::TIME_TOTAL_SECONDS_OFFSETS);
 	}
 
 	void SetTotalMilliseconds(int millisecond)
 	{
-		Memory::Write<int>(GetBaseAddress(), TIME_TOTAL_MILLISECONDS_OFFSETS, millisecond);
+		Memory::Write<int>(GetBaseAddress(), Offsets::TIME_TOTAL_MILLISECONDS_OFFSETS, millisecond);
 	}
 
 	int GetTotalMilliseconds()
 	{
-		return Memory::Read<int>(GetBaseAddress(), TIME_TOTAL_MILLISECONDS_OFFSETS);
+		return Memory::Read<int>(GetBaseAddress(), Offsets::TIME_TOTAL_MILLISECONDS_OFFSETS);
 	}
 
 	void SetStageMinutes(byte minutes)
 	{
-		Memory::Write<byte>(GetBaseAddress(), TIME_STAGE_MINUTES_OFFSETS, minutes);
+		Memory::Write<byte>(GetBaseAddress(), Offsets::TIME_STAGE_MINUTES_OFFSETS, minutes);
 	}
 
 	byte GetStageMinutes()
 	{
-		return Memory::Read<byte>(GetBaseAddress(), TIME_STAGE_MINUTES_OFFSETS);
+		return Memory::Read<byte>(GetBaseAddress(), Offsets::TIME_STAGE_MINUTES_OFFSETS);
 	}
 
 	void SetStageSeconds(byte seconds)
 	{
-		Memory::Write<byte>(GetBaseAddress(), TIME_STAGE_SECONDS_OFFSETS, seconds);
+		Memory::Write<byte>(GetBaseAddress(), Offsets::TIME_STAGE_SECONDS_OFFSETS, seconds);
 	}
 
 	byte GetStageSeconds()
 	{
-		return Memory::Read<byte>(GetBaseAddress(), TIME_STAGE_SECONDS_OFFSETS);
+		return Memory::Read<byte>(GetBaseAddress(), Offsets::TIME_STAGE_SECONDS_OFFSETS);
 	}
 
 	void SetStageMilliseconds(int millisecond)
 	{
-		Memory::Write<int>(GetBaseAddress(), TIME_STAGE_MILLISECONDS_OFFSETS, millisecond);
+		Memory::Write<int>(GetBaseAddress(), Offsets::TIME_STAGE_MILLISECONDS_OFFSETS, millisecond);
 	}
 
 	int GetStageMilliseconds()
 	{
-		return Memory::Read<int>(GetBaseAddress(), TIME_STAGE_MILLISECONDS_OFFSETS);
+		return Memory::Read<int>(GetBaseAddress(), Offsets::TIME_STAGE_MILLISECONDS_OFFSETS);
 	}
 
 	void SetIPR0D0J2V0()
 	{
-		Memory::Write<byte>(GetBaseAddress(), GAME_IPR0D0J2V0_OFFSETS, 0);
+		if (Offsets::IS_STEAM) {
+			Memory::Write<byte>(GetBaseAddress(), Offsets::GAME_IPR0D0J2V0_OFFSETS, 0);
+		}
 	}
 }

@@ -45,7 +45,7 @@ namespace Spelunky
 	void Entity::PlaySound(const char* sound)
 	{
 		using PlaySoundFastCall = VOID(__fastcall*)(DWORD entityAddress, void* edx, const char* sound);
-		PlaySoundFastCall PlaySound = (PlaySoundFastCall)(GetBaseAddress() + FUNCTION_PLAYSOUND_OFFSET);
+		PlaySoundFastCall PlaySound = (PlaySoundFastCall)(GetBaseAddress() + Offsets::FUNCTION_PLAYSOUND_OFFSET);
 
 		PlaySound(address, NULL, sound);
 	}

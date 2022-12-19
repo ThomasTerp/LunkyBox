@@ -9,6 +9,7 @@
 #include "Menu.h"
 #include "../Spelunky/Spelunky.h"
 #include "../Spelunky/Player.h"
+#include "../Memory/Offsets.h"
 
 
 namespace Mod

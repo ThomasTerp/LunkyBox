@@ -166,6 +166,7 @@
     <ClCompile Include="Input\KeyState.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Memory\Memory.cpp" />
+    <ClCompile Include="Memory\Offsets.cpp" />
     <ClCompile Include="Mod\Menu.cpp" />
     <ClCompile Include="Mod\MenuItem.cpp" />
     <ClCompile Include="Mod\Mod.cpp" />
@@ -188,6 +189,7 @@
     <ClInclude Include="Input\KeyState.h" />
     <ClInclude Include="Main.h" />
     <ClInclude Include="Memory\Memory.h" />
+    <ClInclude Include="Memory\Offsets.h" />
     <ClInclude Include="Mod\Menu.h" />
     <ClInclude Include="Mod\MenuItem.h" />
     <ClInclude Include="Mod\Mod.h" />
