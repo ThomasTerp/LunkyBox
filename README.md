@@ -19,18 +19,18 @@ Video: https://www.youtube.com/watch?v=7bU-LUbaObc
 Reddit thread: https://www.reddit.com/r/spelunky/comments/4g0byn/lunkybox_ingame_menu_mod_with_object_spawner/  
 Steam thread: http://steamcommunity.com/app/239350/discussions/0/364042262886109500/  
 
-### Download & Support ###
+## Download & Support ##
 &#65279; | **Steam** | **GOG**
 ------------- |------------- | -------------
 **Spelunky 1.47 (newest)** | [Download LunkyBox 1.4](https://github.com/ThomasTerp/LunkyBox/releases/tag/1.4) | Unsupported
 **Spelunky 1.4** | [Download LunkyBox 1.3](https://github.com/ThomasTerp/LunkyBox/releases/tag/1.3) | [Download LunkyBox 1.3](https://github.com/ThomasTerp/LunkyBox/releases/tag/1.3)
 
-### Known bugs ###
+## Known bugs ##
 - Changing screen resolution after opening menu might crash the game
 - If any of the player infinite options is on when going into the Yama level, the game will crash. Turn them off before going into the level, you can turn them on again after the Yama cutscene is over
 - In the GOG version, you might have to start Spelunky twice before the menu shows up
 
-### Troubleshooting ###
+## Troubleshooting ##
 If LunkyBox is for some reason not working, here is some things you can try:
 - Run LunkyBoxInjector.exe as administrator
 - Restart Spelunky a few times
